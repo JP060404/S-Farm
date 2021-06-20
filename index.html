@@ -3,10 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 
+        レスポンシブの設定
+        ・viewportの設定
+     -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <!-- このサイトは何かを説明する場所 -->
+    <meta name="description" content="重松農園の紹介"> 
+    <!-- タイトルの設定 -->
+    <title>Shigematsu Farm</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- headerタグの作成
+    　・ロゴの設定をします
+    -->
+    <header>
+        <h1>
+            <a href="/">
+                <span>重松農園</span><br>
+                <span>Shigematsu Farm</span>
+            </a>
+        </h1>
+        <nav class="pc-nav">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span>生産地</span><br>
+                        <span>Terroir</span>                    
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>生産品</span><br>
+                        <span>Products</span>                    
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>農園主</span><br>
+                        <span>Owner</span>                    
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>こだわり</span><br>
+                        <span>Polciy</span>                    
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--    
+        mainタグの作成
+        ・profile要とwork用の箱を作成
+        divタグを使用
+     -->
+     <div class="block-main">
+         <!-- 
+             profileの箱
+          -->
+          <div class="box-profile">
+              <h2 class="sub-title">
+                  <span class="color-green">P</span>rofile
+              </h2>
+              <div class="item-list">
+                  <img src="img\yama to umi.JPG" alt="風景画像">
+                  <b>重松 順平</b>
+                  <p class="name-english">jumpei shigematsu</p>
+                  <p class="color-green">HTML / CSS / JavaScript / PHP / MySQL / CodeIgniter / Adobe XD</p>
+                  <div class="career">
+                    <p>1988年生まれ　愛媛県松山市出身</p>
+                    <p>大学時代神戸、ベルリンで経済学を学ぶ</p>
+                    <P>海運会社に就職。船舶運航管理、会社管理、<br>M＆A、プロジェクト開発など幅広い業務に従事</P>
+                  </div>
+              </div>
+              <ul class="icon-list">
+                  <li class="icon-github">
+                      <a href="">
+                          <img src="img/github.svg" alt="githubのアイコン">
+                      </a>                    
+                  </li>
+                  <li class="icon-twitter">
+                      <a href="">
+                          <img src="img/twitter.svg" alt="ツイッターのアイコン">
+                      </a>
+                  </li>
+              </ul>
+
+          </div>
+     </div>
+
+     <!-- 
+         Workの箱
+      -->
+      <div class="box-works">
+          <h2 class="sub-title"><span class="color-green">W</span>orks</h2>
+
+          <ul class="works-list">
+              <li>
+                  <img src="img/work_1.JPG" alt="Twitterクローンの画像">
+                  <h3>Twitterクローン</h3>
+                  <span>HTML / CSS / PHP / MySQL</span>
+                  <div class="link">
+                      <a href="">Webサイト</a>
+                      <a href="">GitHub</a>
+                  </div>
+              </li>
+
+              <li>
+                <img src="img/work_1.JPG" alt="Twitterクローンの画像">
+                <h3>Twitterクローン</h3>
+                <span>HTML / CSS / PHP / MySQL</span>
+                <div class="link">
+                    <a href="">Webサイト</a>
+                    <a href="">GitHub</a>
+                </div>
+            </li>
+
+            <li>
+                <img src="img/work_1.JPG" alt="Twitterクローンの画像">
+                <h3>Twitterクローン</h3>
+                <span>HTML / CSS / PHP / MySQL</span>
+                <div class="link">
+                    <a href="">Webサイト</a>
+                    <a href="">GitHub</a>
+                </div>
+            </li>
+          </ul>
+      </div>
+
+      <!--  
+          fotterタグの作成
+          .copyrightの設定
+          pタグを利用
+       -->
+       <footer class="block-footer">
+           <p>Copyright © 2021  J. Shigematsu</p>
+       </footer>
     
 </body>
 </html>
